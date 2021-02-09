@@ -206,7 +206,7 @@ hi! link WildMenu PmenuSel
 call s:Hi('Comment', s:p.comment)
 hi! link Identifier NormalFg
 hi! link Type Keyword
-call s:Hi('Typedef', s:p.typeDef)
+call s:Hi('Typedef', s:p.typeDef, s:p.null, 'bold')
 call s:Hi('Todo', s:p.todo, s:p.null, 'italic')
 hi! link Special PreProc
 call s:Hi('Constant', s:p.constant)
@@ -216,12 +216,12 @@ call s:Hi('Number', s:p.number)
 call s:Hi('Delimiter', s:p.delimiter)
 call s:Hi('SpecialComment', s:p.specialComment, s:p.null, 'italic')
 hi! link Statement Keyword
-call s:Hi('Keyword', s:p.keyword)
+call s:Hi('Keyword', s:p.keyword, s:p.null, 'italic')
 call s:Hi('Underlined', s:p.fg, s:p.null, 'underline')
-call s:Hi('PreProc', s:p.metaData)
+call s:Hi('PreProc', s:p.metaData, s:p.null, 'bold')
 hi! link Tag Keyword
 call s:Hi('Debug', s:p.debug, s:p.null, 'italic')
-call s:Hi('Function', s:p.function)
+call s:Hi('Function', s:p.function, s:p.null, 'italic')
 
 " Neovim
 if has('nvim')
